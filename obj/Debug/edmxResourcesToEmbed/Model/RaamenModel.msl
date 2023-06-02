@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RaamenDBModelStoreContainer" CdmEntityContainer="RaamenDBEntities">
+    <EntitySetMapping Name="Details">
+      <EntityTypeMapping TypeName="RaamenDBModel.Detail">
+        <MappingFragment StoreEntitySet="Detail">
+          <ScalarProperty Name="Headerid" ColumnName="Headerid" />
+          <ScalarProperty Name="Ramenid" ColumnName="Ramenid" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Headers">
+      <EntityTypeMapping TypeName="RaamenDBModel.Header">
+        <MappingFragment StoreEntitySet="Header">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Customerid" ColumnName="Customerid" />
+          <ScalarProperty Name="Staffid" ColumnName="Staffid" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Meats">
+      <EntityTypeMapping TypeName="RaamenDBModel.Meat">
+        <MappingFragment StoreEntitySet="Meat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ramen1">
+      <EntityTypeMapping TypeName="RaamenDBModel.Ramen">
+        <MappingFragment StoreEntitySet="Ramen">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Meatid" ColumnName="Meatid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Borth" ColumnName="Borth" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="RaamenDBModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="RaamenDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Roleid" ColumnName="Roleid" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
